@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+            <flag name="none" value="0x3" /><!-- 自己实现的头部布局 -->
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    
+     <attr name="borderWidth" format="dimension"/>
+     <attr name="borderColor" format="color"/>
+    
+    <!-- 扩展的EditText控件 -->
+    <declare-styleable name="XEditText">
+        <!-- 设置清除按钮的显示方式 -->
+        <attr name="showClearType">
+            <flag name="auto_show_clear" value="0x1"></flag>
+            <flag name="show_clear" value="0x2"></flag>
+        </attr>
+        <!-- 设置带边框的密码框 -->
+        <attr name="borderPassword" format="boolean"/>
+        <!-- 设置密码框的  线宽 -->
+        <attr name="borderWidth" />
+        <!-- 边框类型 -->
+        <!-- <attr name="borderType">
+            <flag name="rectangle" value="0x1"></flag>
+            <flag name="round_rectangle" value="0x2"></flag>
+        </attr> -->
+        <!-- 边框圆角弧度  -->
+        <attr name="borderRadius" format="dimension"/>
+        <!-- 密码框显示字符  默认小黑 点 -->
+        <attr name="showChar" format="string"/>
+        <!-- 设置光标  颜色  默认和边框一个色 -->
+        <attr name="cursorColor" format="color"/>
+        <!-- 设置边框颜色  默认  黑色 -->
+        <attr name="borderColor"/>
+    </declare-styleable>
+        
+    
+    <attr name="specialStyle">
+             <flag name="circle" value="1"/>
+             <flag name="roundrect" value="2"/>
+             <flag name="none" value="0"/>
+    </attr>
+    <attr name="roundRectRadius" format="dimension"/>
+    
+     <declare-styleable name="SpecialImageView">
+         <!-- 设置控件的样式 -->
+         <attr name="specialStyle"/>
+         <!-- 设置边框的宽度 -->
+         <attr name="borderWidth" />
+         <!-- 设置边框的颜色 -->
+         <attr name="borderColor" />
+         <!-- 设置圆角矩形的 半径大小 -->
+         <attr name="roundRectRadius"/>
+         
+     </declare-styleable>
+     
+     <!--<declare-styleable name="GifView">
+         <attr name="gifSrc" format="reference"/>
+     </declare-styleable>-->
+     
+     <declare-styleable name="AbstractXImageView">
+         <attr name="specialStyle"/>
+         <attr name="borderWidth" />
+         <attr name="borderColor" />
+         <attr name="roundRectRadius"/>
+     </declare-styleable>
+
+     <attr name="shapeBackground" format="color"/>
+     <declare-styleable name="ShapeImageView">
+         <attr name="other" format="boolean"/>
+         <attr name="specialStyle"/>
+         <attr name="borderWidth" />
+         <attr name="borderColor" />
+         <attr name="roundRectRadius"/>
+         <attr name="shapeBackground"/>
+     </declare-styleable>
+     
+     <declare-styleable name="MovieImageView">
+         <attr name="gif" format="reference"/>
+         <attr name="assetsPath" format="string"/>
+     </declare-styleable>
+</resources>

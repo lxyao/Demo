@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style
+        name="custom_input_pwd_style" parent="@android:style/Widget.RatingBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/custom_input_pwd_background</item>
+        <item name="android:indeterminateDrawable">@drawable/custom_input_pwd_background</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:maxHeight">40dip</item>
+        <item name="android:minWidth">40dip</item>
+        <item name="android:maxWidth">40dip</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <!-- 内容充满 -->
+    <style name="match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- 宽度填充  高度适中 -->
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 宽度适中  高度填充 -->
+    <style name="wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- 内容适中样式 -->
+    <style name="wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="base_text_style" parent="@style/wrap_content">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:lineSpacingExtra">1.5px</item>
+    </style>
+
+    <style name="text_one_style" parent="@style/base_text_style">
+        <item name="android:alpha">0.35</item>
+    </style>
+
+    <style name="text_three_style" parent="@style/base_text_style">
+        <item name="android:alpha">0.85</item>
+    </style>
+
+    <!-- 发送的时间 -->
+    <style name="send_message_item_time_style" parent="@style/text_one_style">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- 头像 -->
+    <style name="send_message_item_head_style">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:src">@mipmap/d_aoteman_2x</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- 发送信息文本 -->
+    <style name="send_message_item_text_style" parent="@style/text_three_style">
+        <item name="android:alpha">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    <!-- 对方的  文本信息  样式 -->
+    <style name="send_message_item_text_left_style" parent="@style/send_message_item_text_style">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">60dp</item>
+        <item name="android:background">@mipmap/duifang</item>
+    </style>
+    <!-- 自己的  文本信息  样式 -->
+    <style name="send_message_item_text_right_style" parent="@style/send_message_item_text_style">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:background">@mipmap/wo</item>
+    </style>
+</resources>

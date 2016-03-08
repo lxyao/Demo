@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.yao.testdemo.cleartext.EditTextClear
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <EditText
+        android:id="@+id/testdemo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/testdemo_vp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></android.support.v4.view.ViewPager>
+</LinearLayout>

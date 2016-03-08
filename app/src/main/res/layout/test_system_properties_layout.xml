@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:fadingEdge="none"
+    android:fadingEdgeLength="0dp"
+    android:overScrollMode="never" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="系统属性"
+            android:textColor="#ff00ff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/test_system_properties_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:selectAllOnFocus="false"
+            android:textIsSelectable="false"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/test_system_properties_id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff00ff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</ScrollView>

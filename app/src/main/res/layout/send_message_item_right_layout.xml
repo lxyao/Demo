@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView 
+        android:id="@+id/send_message_item_right_tv_time"
+        style="@style/send_message_item_time_style"
+        android:text="16:14"/>
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@color/white"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp" >
+		
+	    <com.yao.testdemo.chat.SpecialImageView
+	        style="@style/send_message_item_head_style"
+	        app:specialStyle="roundrect"
+	        app:borderColor="@color/blue"
+	        android:src="@mipmap/d_aini_2x"
+	        android:id="@+id/send_message_item_right_riv_head"
+	        android:layout_marginRight="10dp"
+	        android:layout_alignParentRight="true"/>
+	    
+	    <TextView 
+	        android:id="@+id/send_message_item_right_tv_content"
+	        style="@style/send_message_item_text_right_style"
+	        android:text="额，好的！！！！"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@id/send_message_item_right_riv_head"/>
+	</RelativeLayout>
+</LinearLayout>

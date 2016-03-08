@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/system_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="系统Toast"
+        android:onClick="onAction1"/>
+
+    <Button
+        android:id="@+id/once_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多次点击显示一次的Toast"
+        android:onClick="onAction1"/>
+
+    <Button
+        android:id="@+id/view_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Toast"
+        android:onClick="onAction1"/>
+
+    <Button
+        android:id="@+id/default_view_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="默认view Toast"
+        android:onClick="onAction1"/>
+</LinearLayout>

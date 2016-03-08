@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/system_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前毫秒时间"
+        android:onClick="onTime"/>
+
+    <Button
+        android:id="@+id/millis_format"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="根据毫秒值获得匹配的时间"
+        android:onClick="onTime"/>
+
+    <Button
+        android:id="@+id/string_format"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="根据时间获得匹配的时间格式"
+        android:contentDescription="2016-02-21 21:21:21 星期三"
+        android:onClick="onTime"/>
+
+    <Button
+        android:id="@+id/string_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="根据时间获得Calendar"
+        android:contentDescription="2016-01-21 21:54:21 星期四"
+        android:onClick="onTime"/>
+</LinearLayout>

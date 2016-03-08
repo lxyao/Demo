@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_parent"
+    android:orientation="vertical" >
+    <!--<com.yao.testdemo.ximage.other.ShapeImageView1
+        android:id="@+id/shape1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.yao.testdemo.ximage.other.ShapeImageView1
+        android:id="@+id/shape2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:specialStyle="circle" />
+
+    <com.yao.testdemo.ximage.other.ShapeImageView1
+        android:id="@+id/shape3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:specialStyle="roundrect"/>
+
+    <com.yao.testdemo.ximage.other.MovieImageView1
+        android:id="@+id/movie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:gif="@raw/ad11274df9bcdf3ba0a27f5a44253888"
+        app:specialstyle="circle"
+        android:layerType="software"
+        app:borderColor="@color/blue"/>-->
+
+    <com.yao.testdemo.ximage.other.MovieImageView1
+        android:id="@+id/movie2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layerType="software"
+        app:gif="@raw/ad11274df9bcdf3ba0a27f5a44253888"/>
+   <!-- <com.yao.testdemo.ximage.other.MovieImageView1
+        android:id="@+id/movie3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gif="@raw/ad11274df9bcdf3ba0a27f5a44253888"
+        app:specialstyle="circle"
+        android:layerType="software"/>-->
+    <ScrollView
+        style="@style/match_parent"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.yao.testdemo.ximage.other.MovieImageView1
+                android:id="@+id/movie4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:shapeBackground="@color/blue"
+                android:layerType="software"
+                app:gif="@raw/ad11274df9bcdf3ba0a27f5a44253888"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

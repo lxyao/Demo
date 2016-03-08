@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dd"
+        android:hint="系统输入框"
+        android:inputType="textPassword"/>
+     
+    <com.yao.testdemo.cleartext.XEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/dd"
+        android:hint="系统输入框"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+   
+   <!-- <com.yy.cleartext.XEditText 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="始终显示清除按钮"
+        app:showClearType="show_clear"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    
+    <com.yy.cleartext.XEditText 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="自动显示清除按钮"
+        app:showClearType="auto_show_clear"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="以下使用代码设置："
+        android:layout_marginTop="5dp"/>
+   
+    <com.yy.cleartext.XEditText 
+        android:id="@+id/show_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="始终显示清除按钮"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    
+    <com.yy.cleartext.XEditText 
+        android:id="@+id/auto_show_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="自动显示清除按钮"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/> -->
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="以下测试密码边框："
+        android:layout_marginTop="5dp"/>
+    
+    <com.yao.testdemo.cleartext.XEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:background="@null"
+        android:maxLength="6"
+        android:textSize="17sp"
+        app:borderPassword="true"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="phone"/>
+    
+    <com.yao.testdemo.cleartext.XEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:background="@null"
+        android:maxLength="8"
+        app:borderPassword="true"
+        app:borderRadius="10px"
+        app:borderColor="#ff00ff"
+        app:showChar="密"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="phone"/>
+    
+    <com.yao.testdemo.cleartext.XEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:background="@null"
+        android:maxLength="12"
+        app:borderPassword="true"
+        app:borderRadius="10px"
+        app:borderColor="#ff00ff"
+        app:showChar="$"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="phone"/>
+    
+    <com.yao.testdemo.cleartext.NoMenuEditText
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="false"
+        android:textIsSelectable="false"
+        android:imeOptions="flagNoExtractUi"
+        android:text="1212121"
+        android:textSize="17sp"
+        android:inputType="phone"/>
+   <!--  <EditText 
+        android:background="@drawable/custom_input_pwd_border_background"
+        android:text="测试清除控件jfisdfdkfjsdkfjsdifsdlfkdsjfisdfsdlkfddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="6"
+        android:drawableRight="@drawable/shanchu"/> -->
+        
+        
+      <!--  &lt;!&ndash; 边框圆角弧度  &ndash;&gt;
+        <attr name="borderRadius" format="dimension"/>
+        &lt;!&ndash; 密码框显示字符  默认小黑 点 &ndash;&gt;
+        <attr name="showChar" format="string"/>
+        &lt;!&ndash; 设置光标  颜色  默认和边框一个色 &ndash;&gt;
+        <attr name="cursorColor" format="color"/>
+        &lt;!&ndash; 设置边框颜色  默认  黑色 &ndash;&gt;
+        <attr name="borderColor" format="color"/>-->
+</LinearLayout>
