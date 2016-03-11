@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <TextView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:text="模拟actionbar"
+        android:gravity="center"
+        android:textColor="@color/blue"/>
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ScrollView
+                android:id="@+id/mscrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.yao.testdemo.copyelememenu.ListViewExpanded
+                    android:id="@+id/side_menu_lv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@color/eleme_white"
+                    android:dividerHeight="1dp" />
+            </ScrollView>
+        </FrameLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/eleme_white" >
+
+            <ListView
+                android:id="@+id/menu_lvmenu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:divider="@null" />
+
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="right|top"
+                android:background="#ff303030"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title_layout_catalog"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/eleme_unfocused"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="5dip"
+                    android:textColor="#454545" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

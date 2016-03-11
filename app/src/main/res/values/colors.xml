@@ -6,4 +6,7 @@
 
     <color name="blue">#36a5df</color>
     <color name="white">#ffffff</color>
+
+    <color name="eleme_white">#FF6666</color>
+    <color name="eleme_unfocused">#FFF000</color>
 </resources>
